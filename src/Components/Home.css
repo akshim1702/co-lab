@@ -1,0 +1,39 @@
+/* Navigation  */
+
+nav>ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav{
+    background-color: rgb(211, 68, 68);
+}
+.logo {
+    float: left;
+    padding: 10px 10px;
+    margin:2px 2px;
+}
+
+
+nav>ul>li{
+    list-style: none;
+    padding: 20px 25px;
+}
+
+/* Background first section      */
+
+.firstSection{
+    background-color: rgb(197, 31, 31);
+    height: 255px;
+}
+
+
+/* second section     */
+
+.secondSection{
+    width: 50%;
+    margin:200px;
+}
+.secondSection>div{
+    width: 90%;
+}
