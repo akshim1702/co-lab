@@ -33,8 +33,10 @@ nav>ul>li{
 
 .secondSection{
     width: 80%;
-    margin:200px;
-    margin-left: 205px ;
+    /* margin:180px; */
+    padding:15px;
+    /* margin-left: 155px ; */
+    /* background-color: red; */
 }
 
 /* slick area */
@@ -46,12 +48,12 @@ nav>ul>li{
 /* slick card */
 
 .itemsl{
-    height: 120px;
-    width: 120px !important ;
+    /* height: 250px;
+    width: 250px !important ; */
     background-color: aquamarine;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 .slider_head{
@@ -60,4 +62,50 @@ nav>ul>li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* test  */
+
+.for_slick_slider .slick-center div .itemsl {
+    width: 150px;
+    height: 230px;
+    transition: all linear .3s;
+    border: 8px solid honeydew;
+    box-shadow: 0px 0px 9px 1px rgb(224, 224, 231);
+}
+.for_slick_slider .slick-active div .itemsl {
+    width: 150px;
+    height: 230px;
+    transition: all linear .3s;
+    border: 8px solid honeydew;
+    box-shadow: 0px 0px 9px 1px rgb(224, 224, 231);
+}
+
+.for_slick_slider .slick-center div .itemsl  {
+   
+    transform: scale(2);
+    border: 8px solid honeydew;
+    box-shadow: 0px 0px 9px 1px rgb(224, 224, 231);
+}
+
+.for_slick_slider .slick-center div .itemsl:hover {
+    transform: scale(2.1);
+    transition: all linear .3s;
+}
+
+
+
+div button::before,div button::after{
+    color:black;
+    background-color:black;
+    width: 25px;
+    height: 25px;
+}
+
+.slick-center div{
+    margin:122px 0px;
+}
+.slick-active div{
+    margin:122px 0px;
 }
