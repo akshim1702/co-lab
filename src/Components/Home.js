@@ -10,8 +10,8 @@ const Home = () => {
         autoplay: false,
         autoplaySpeed: 2000,
         dots: false,
-        prevArrow: <button type="button" className="slick-prev">Previous</button>,
-        nextArrow: <button type="button" className="slick-next">Previous</button>,
+        // prevArrow: <button type="button" className="slick-prev">Previous</button>,
+        // nextArrow: <button type="button" className="slick-next">Previous</button>,
         centerMode: true,
         centerPadding: '0,'
     };
