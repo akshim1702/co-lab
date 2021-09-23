@@ -1,0 +1,13 @@
+.AboutText{
+    background-color: rgb(211, 205, 205);
+    height:180px;
+    margin: 25px 25px 25px 25px;
+    box-shadow: 0px 0px 5px 2px red;
+    font-size:22px;
+}
+
+div>h1{
+    text-align: center;
+}
+
+

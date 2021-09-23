@@ -1,0 +1,92 @@
+.contactUS{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 25px;
+   
+    flex-direction: column;
+    padding: 0 400px;
+}
+
+.ContactName{
+    /* margin: 15px; */
+    display:flex;
+    width: 100%;
+    align-items:center;
+    justify-content:space-evenly;
+
+}
+
+.ContactDetail{
+    /* margin: 15px; */
+    display:flex;
+    width: 100%;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.message{
+    margin:15px;
+    display: grid;
+}
+
+.first{
+    margin: 15px; 
+}
+.first label{
+    margin: 15px;
+}
+.last{
+    margin: 15px;
+}
+.last label{
+    margin: 15px;
+}
+
+
+.emailID{
+    margin: 0px;
+}
+
+.emailID label{
+    margin: 13px;
+}
+
+
+.phoneNO{
+    margin:0px;
+}
+
+.phoneNO label{
+    margin:13px;
+}
+
+
+
+input{
+    border-radius: 7px;
+    border:1px solid grey;
+    
+}
+textarea{
+    border-radius: 7px;
+    border:1px solid grey;   
+}

@@ -1,12 +1,23 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import './Home.css';
+import AboutSection from './AboutSection';
+import ContactUS from './ContactUS';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+import Pneumonia from './Pneumonia';
 const Home = () => {
     const settings = {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         autoplay: false,
         autoplaySpeed: 2000,
         dots: false,
@@ -16,6 +27,7 @@ const Home = () => {
         centerPadding: '0,'
     };
     return (
+        
         <>
             <div className="firstSection" id="first">
                 <nav>
@@ -29,44 +41,44 @@ const Home = () => {
                     </ul>
                 </nav>
             </div>
-
+            
+            <Router>
             <div className="secondSection">
+                
                 <div className="for_slick_slider">
 
                     <Slider {...settings}>
                         <div className="itemsl">
                             <div className="slider_head">
-                                <h3>hello</h3>
+                            <Link to="/pneumonia">Pneumonia</Link>
                             </div>
                         </div>
                         <div className="itemsl">
                             <div className="slider_head">
-                                <h3>hey</h3>
+                            <Link to="/covid">Pneumonia</Link>
                             </div>
                         </div>
                         <div className="itemsl">
                             <div className="slider_head">
-                                <h3>hola</h3>
-                            </div>
-                        </div>
-                        <div className="itemsl">
-                            <div className="slider_head">
-                                <h3>si</h3>
-                            </div>
-                        </div>
-                        <div className="itemsl">
-                            <div className="slider_head">
-                                <h3>namste</h3>
-                            </div>
-                        </div>
-                        <div className="itemsl">
-                            <div className="slider_head">
-                                <h3>bsdk</h3>
+                            <Link to="/pneumonia">Pneumonia</Link>
                             </div>
                         </div>
                     </Slider>
                 </div>
             </div>
+            <Switch>
+            <Route path="/pneumonia">
+            <Pneumonia />
+            </Route>
+            </Switch>
+            </Router>
+            <div>
+                <AboutSection />
+            </div>
+            <div>
+                <ContactUS />
+            </div>
+        
 
         </>
 
