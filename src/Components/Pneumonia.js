@@ -1,9 +1,10 @@
 import React from 'react'
+import './Pneumonia.css'
 
 const Pneumonia = () => {
     return (
-        <div>
-            hello
+        <div className="pneu">
+            Pneumonia data
         </div>
     )
 }

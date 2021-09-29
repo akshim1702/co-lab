@@ -1,0 +1,106 @@
+.secondSection{
+    
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(190, 125, 125);
+    padding: 25px 0;
+    
+}
+
+/* slick area */
+
+.for_slick_slider{
+    /* margin-left: 200px; */
+}
+
+/* slick card */
+
+.itemsl{
+    /* height: 250px;
+    width: 250px !important ; */
+    /* background-color: aquamarine;
+    display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.slider_head{
+    /* width: 100%;
+    height: 100%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+/* test  */
+
+
+.slick-slider .slick-list{
+  /* margin:0px 15px;
+  padding:0px 15px;   */
+}
+/* .for_slick_slider .slick-center div .itemsl {
+    width: 150px;
+    height: 230px;
+    transition: all linear .3s;
+    border: 8px solid honeydew;
+    box-shadow: 0px 0px 9px 1px rgb(224, 224, 231);
+}
+.for_slick_slider .slick-active div .itemsl {
+    width: 150px;
+    height: 230px;
+    transition: all linear .3s;
+    border: 8px solid honeydew;
+    box-shadow: 0px 0px 9px 1px rgb(224, 224, 231);
+}
+
+.for_slick_slider .slick-slider .slick-list .slick-track .slick-active{
+    width:230px;
+}
+
+.for_slick_slider .slick-center div .itemsl  {
+   
+    transform: scale(1);
+    border: 8px solid honeydew;
+    box-shadow: 0px 0px 9px 1px rgb(224, 224, 231);
+}
+
+.for_slick_slider .slick-center div .itemsl:hover {
+    transform: scale(1);
+    transition: all linear .3s;
+}
+
+
+
+div button::before,div button::after{
+    color:black;
+    background-color:black;
+    width: 25px;
+    height: 25px;
+}
+div button::before{
+    margin-right:15px;
+}
+div button::after{
+    margin-left:15px;
+}
+
+.slick-center div{
+    margin:122px 0px;
+}
+.slick-active div{
+    margin:122px 0px;
+} */
+
+
+
+.card{
+    width: 400px;
+    height: 300px;
+    /* border: 2px solid black; */
+    border-radius:12px;
+    background-color: rgb(255, 212, 212);
+    box-shadow: 0px 0px 14px 2px rgb(155, 147, 147)
+}

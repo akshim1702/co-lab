@@ -1,17 +1,8 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React from 'react'
+import SlideSection from "./SlideSection";
 import './Home.css';
 import AboutSection from './AboutSection';
 import ContactUS from './ContactUS';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
-import Pneumonia from './Pneumonia';
 const Home = () => {
     const settings = {
         infinite: true,
@@ -27,58 +18,30 @@ const Home = () => {
         centerPadding: '0,'
     };
     return (
-        
+
         <>
             <div className="firstSection" id="first">
                 <nav>
                     <div className="logo">Co-Lab</div>
                     <ul >
-
-
                         <li><a>Home</a></li>
                         <li><a>About </a></li>
                         <li><a>Contact us</a></li>
                     </ul>
                 </nav>
             </div>
-            
-            <Router>
-            <div className="secondSection">
-                
-                <div className="for_slick_slider">
 
-                    <Slider {...settings}>
-                        <div className="itemsl">
-                            <div className="slider_head">
-                            <Link to="/pneumonia">Pneumonia</Link>
-                            </div>
-                        </div>
-                        <div className="itemsl">
-                            <div className="slider_head">
-                            <Link to="/covid">Pneumonia</Link>
-                            </div>
-                        </div>
-                        <div className="itemsl">
-                            <div className="slider_head">
-                            <Link to="/pneumonia">Pneumonia</Link>
-                            </div>
-                        </div>
-                    </Slider>
-                </div>
-            </div>
-            <Switch>
-            <Route path="/pneumonia">
-            <Pneumonia />
-            </Route>
-            </Switch>
-            </Router>
-            <div>
-                <AboutSection />
-            </div>
-            <div>
-                <ContactUS />
-            </div>
-        
+            {/* <Router> */}
+
+            {/* <Switch>
+                <Route path="/pneumonia">
+                <Pneumonia />
+                </Route>
+                </Switch>
+                </Router> */}
+            <SlideSection />
+            <AboutSection />
+            <ContactUS />
 
         </>
 
