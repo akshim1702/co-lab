@@ -26,11 +26,13 @@ import {
   useParams
 } from "react-router-dom";
 
-const drawerWidth = 300;
+const drawerWidth = 400;
 
 function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  // const diseases = [{ hey: 'Pneumonia' }, { hello: 'Maleria' }, { hi: 'Covid' }]
+  const diseases = ['Pneumonia' , 'Maleria', 'Covid' ]
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -40,38 +42,42 @@ function ResponsiveDrawer(props) {
     <div>
       <Toolbar />
       <Divider />
-      {/* <Router>
+      <Router>
         <List>
-          {['Pneumonia', 'Maleria', 'Covid'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                 */}
-                {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-                {/* Co-LAB */}
-              {/* </ListItemIcon>
-              <ListItemText primary={text} />
-              <Link to='/pneumonia' >
-                <Pnemonia>
-              </Link>
-              <Link to='/covid' >
-                b
-              </Link>
+          {diseases.map((text, index) => (
+            <ListItem button key={index}>
+              {console.log(diseases.index)}
+              {diseases.key === 0 ? <></> : <Link to={text}>{text}</Link>}
+              {/* {diseases.key === 1 ? <Link/>: <Link to="/covid">Covid</Link>} */}
+                {/* {diseases.key === 2 ? <Link/>: <Link to="/covid">maleria</Link>} */}
+              {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
+              
+              <ListItemText />
             </ListItem>
           ))}
         </List>
+        {/* {diseases.map((text) => {
+          let a = "/" + text;
+          return (
+            <div>
+              alert("hello")
+            <List>
+              <ListItem>
+                <Link to={a} >{diseases.hey}hello</Link>
+              </ListItem>
+            </List>
+            </div>
+          )
+        })} */}
         <Switch>
-                  <Route exact path='/covid'>
-                    <Covid />
-                  </Route>
-                  <Route exact path='/pneumonia'>
-                    <Pneumonia />
-                  </Route>
-                </Switch>
-      </Router> */}
-      
-      <Pneumonia>
-        <Link to="/pneumonia" />
-      </Pneumonia>
+          <Route exact path='/covid'>
+            <Covid />
+          </Route>
+          <Route exact path='/pneumonia'>
+            <Pneumonia />
+          </Route>
+        </Switch>
+      </Router>
       <Divider />
     </div>
   );
@@ -137,7 +143,7 @@ function ResponsiveDrawer(props) {
       </Box>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
-        {/* <Router>
+        <Router>
           <Switch>
             <Route exact path='/covid'>
               <Covid />
@@ -146,7 +152,7 @@ function ResponsiveDrawer(props) {
               <Pneumonia />
             </Route>
           </Switch>
-        </Router> */}
+        </Router>
       </Box>
     </Box>
   );
